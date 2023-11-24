@@ -7,15 +7,16 @@ function App() {
   };
 
   const palindromeChecker = () => {
-    let toArray = search.split("");
+    let emptyAway = search.toLowerCase().replaceAll(" ", "");
+    let toArray = emptyAway.split("");
     let toReverse = toArray.reverse();
     let palindrome = toReverse.join("");
     if (search == "") {
       return "";
-    } else if (search == palindrome) {
+    } else if (emptyAway == palindrome) {
       return "The given word/number/phrase is a palindrome.";
     } else {
-      return "The given word/number/phrase is not a palidrome.";
+      return "The given word/number/phrase is not a palindrome.";
     }
   };
 
