@@ -6,18 +6,20 @@ function App() {
     setSearch(e.target.value);
   };
   const bubbleSort = () => {
-    let feed = arr.split(",");
-    let food = feed.map(Number);
-    for (let i = food.length; i > 0; i--) {
-      for (let j = 0; j < i - 1; j++) {
-        if (food[j] > food[j + 1]) {
-          let temp = food[j];
-          food[j] = food[j + 1];
-          food[j + 1] = temp;
+    if (arr != "") {
+      let feed = arr.split(",");
+      let food = feed.map(Number);
+      for (let i = food.length; i > 0; i--) {
+        for (let j = 0; j < i - 1; j++) {
+          if (food[j] > food[j + 1]) {
+            let temp = food[j];
+            food[j] = food[j + 1];
+            food[j + 1] = temp;
+          }
         }
       }
+      return food.toString();
     }
-    return food.toString();
   };
   return (
     <>
