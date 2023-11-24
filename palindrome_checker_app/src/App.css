@@ -1,1 +1,33 @@
+.palindromePicture {
+  background-image: url("/johannes-plenio-U_BPsXzsHQQ-unsplash.jpg");
+  width: 100vw;
+  background-size: cover;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0 0 3px black;
+}
+
+input {
+  padding: 5px;
+  border: 0px;
+  border-radius: 20px;
+  width: 200px;
+}
+
+input:focus {
+  outline: none;
+}

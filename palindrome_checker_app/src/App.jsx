@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 function App() {
   const [search, setSearch] = useState("");
   const searchHandler = (e) => {
@@ -12,17 +13,19 @@ function App() {
     if (search == "") {
       return "";
     } else if (search == palindrome) {
-      return "is palindrome";
+      return "The given word/number/phrase is a palindrome.";
     } else {
-      return "is not palidrome";
+      return "The given word/number/phrase is not a palidrome.";
     }
   };
 
   return (
     <>
-      <p>This is a palindrome checker app.</p>
-      <input type="text" onChange={searchHandler} />
-      <p>{palindromeChecker()}</p>
+      <div className="palindromePicture">
+        <p>Welcome to use palindrome checker app!</p>
+        <input type="text" onChange={searchHandler} />
+        <p>{palindromeChecker()}</p>
+      </div>
     </>
   );
 }
