@@ -9,16 +9,21 @@ function App() {
     if (arr != "") {
       let feed = arr.split(",");
       let food = feed.map(Number);
-      for (let i = food.length; i > 0; i--) {
-        for (let j = 0; j < i - 1; j++) {
-          if (food[j] > food[j + 1]) {
-            let temp = food[j];
-            food[j] = food[j + 1];
-            food[j + 1] = temp;
+      if (!food.includes(NaN)) {
+        for (let i = food.length; i > 0; i--) {
+          for (let j = 0; j < i - 1; j++) {
+            if (food[j] > food[j + 1]) {
+              let temp = food[j];
+              food[j] = food[j + 1];
+              food[j + 1] = temp;
+            }
           }
         }
+
+        return food.toString();
+      } else {
+        return "Please give numbers separated by commas.";
       }
-      return food.toString();
     }
   };
   return (
