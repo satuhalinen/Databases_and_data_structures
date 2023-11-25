@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [arr, setSearch] = useState("");
@@ -28,9 +29,11 @@ function App() {
   };
   return (
     <>
-      <h1>Bubble sort app</h1>
-      <input type="text" onChange={searchHandler} />
-      <p>{bubbleSort()}</p>
+      <div className="bubbleSortPicture">
+        <h1>Bubble sort app</h1>
+        <input type="text" onChange={searchHandler} />
+        <p>{bubbleSort()}</p>
+      </div>
     </>
   );
 }
