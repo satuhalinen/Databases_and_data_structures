@@ -7,6 +7,12 @@ function App() {
     stackCopy.push(stack.length + 1);
     setStack(stackCopy);
   };
+
+  const removeBoxHandler = () => {
+    let stackCopy = [...stack];
+    stackCopy.pop();
+    setStack(stackCopy);
+  };
   const listItems = stack.map((number) => <div>{number}</div>);
 
   return (
@@ -16,7 +22,7 @@ function App() {
       <button className="blueButton" onClick={addBoxHandler}></button>
       <button className="yellowButton"></button>
       <button className="redButton"></button>
-      <button className="removeButton"></button>
+      <button className="removeButton" onClick={removeBoxHandler}></button>
     </>
   );
 }
