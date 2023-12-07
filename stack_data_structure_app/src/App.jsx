@@ -6,19 +6,19 @@ function App() {
 
   const addBlueBoxHandler = () => {
     let stackCopy = [...stack];
-    color = "blue";
+    color = "blueRing";
     stackCopy.push(color);
     setStack(stackCopy);
   };
   const addYellowBoxHandler = () => {
     let stackCopy = [...stack];
-    color = "yellow";
+    color = "yellowRing";
     stackCopy.push(color);
     setStack(stackCopy);
   };
   const addRedBoxHandler = () => {
     let stackCopy = [...stack];
-    color = "red";
+    color = "redRing";
     stackCopy.push(color);
     setStack(stackCopy);
   };
@@ -30,19 +30,33 @@ function App() {
   };
   const listItems = stack
     .toReversed()
-    .map((color) => <div className={color}>{color}</div>);
+    .map((color) => <div className={color}></div>);
 
   return (
     <>
-      <h1>Stack data structure app</h1>
-      {listItems}
-      <button className="blueButton" onClick={addBlueBoxHandler}></button>
-      <button
-        className="yellowButton"
-        onClick={() => addYellowBoxHandler()}
-      ></button>
-      <button className="redButton" onClick={() => addRedBoxHandler()}></button>
-      <button className="removeButton" onClick={removeBoxHandler}></button>
+      <div className="all">
+        <h1>Build a stack!</h1>
+        <div className="withBg">
+          <div className="rings">{listItems}</div>
+          <div className="buttons">
+            <button className="blueButton" onClick={addBlueBoxHandler}>
+              Add a blue ring!
+            </button>
+            <button
+              className="yellowButton"
+              onClick={() => addYellowBoxHandler()}
+            >
+              Add a yellow ring!
+            </button>
+            <button className="redButton" onClick={() => addRedBoxHandler()}>
+              Add a red ring!
+            </button>
+            <button className="removeButton" onClick={removeBoxHandler}>
+              Remove a ring!
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

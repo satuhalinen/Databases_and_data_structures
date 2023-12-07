@@ -1,44 +1,138 @@
+.rings {
+  flex-grow: 1;
+  align-items: flex-end;
+}
+
+.withBg {
+  background-image: url("/bar.png");
+  width: 100vw;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.all {
+  width: 100vw;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  display: flex;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Anonymous Pro", monospace;
+}
+
+h1 {
+  padding: 50px;
+  flex-grow: 1;
+}
+
 .blueButton {
-  background-color: rgb(0, 187, 255);
-  width: 200px;
-  height: 50px;
+  background-color: #23b7c1;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  border: none;
+}
+
+.blueButton:hover {
+  background-color: #78bbc0;
+  border: none;
 }
 
 .yellowButton {
-  background-color: yellow;
-  width: 200px;
-  height: 50px;
+  background-color: #ffe129;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  border: none;
+}
+
+.yellowButton:hover {
+  background-color: #fbeb89;
+  border: none;
 }
 
 .redButton {
-  background-color: rgb(255, 0, 115);
-  width: 200px;
-  height: 50px;
+  background-color: #ee3e48;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  border: none;
+}
+
+.redButton:hover {
+  background-color: #eb8085;
+  border: none;
 }
 
 .removeButton {
-  background-color: yellowgreen;
-  width: 200px;
-  height: 50px;
+  background-color: #3a9e29c5;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  border: none;
 }
 
-.blue {
-  background-color: blue;
-  border-radius: 15px;
+.removeButton:hover {
+  background-color: #7d9857;
+  border: none;
+}
+
+.blueRing {
+  background-color: #23b7c1;
+  border-radius: 30px;
   width: 300px;
   height: 50px;
 }
 
-.yellow {
-  background-color: yellow;
-  border-radius: 15px;
+.blueRing:hover {
+  background-color: #78bbc0;
+}
+
+.yellowRing {
+  background-color: #ffe129;
+  border-radius: 30px;
   width: 300px;
   height: 50px;
 }
 
-.red {
-  background-color: red;
-  border-radius: 15px;
+.yellowRing:hover {
+  background-color: #fbeb89;
+}
+
+.redRing {
+  background-color: #ee3e48;
+  border-radius: 30px;
   width: 300px;
   height: 50px;
+}
+
+.redRing:hover {
+  background-color: #eb8085;
+}
+
+.buttons {
+  align-items: center;
+  background-color: grey;
+}
+
+@media only screen and (max-width: 840px) {
+  .buttons {
+    display: grid;
+    place-items: center;
+  }
 }
