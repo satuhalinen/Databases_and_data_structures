@@ -8,7 +8,7 @@ This is a stack data structure app done on a course called Databases and data st
 
 ## Visuals
 
-![Picture of the app](/stack.svg)
+![Picture of the app](public/game.png)
 
 ## Inspiration
 
