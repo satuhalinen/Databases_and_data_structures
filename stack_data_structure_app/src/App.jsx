@@ -28,7 +28,9 @@ function App() {
     stackCopy.pop();
     setStack(stackCopy);
   };
-  const listItems = stack.map((color) => <div className={color}>{color}</div>);
+  const listItems = stack
+    .toReversed()
+    .map((color) => <div className={color}>{color}</div>);
 
   return (
     <>
@@ -46,5 +48,3 @@ function App() {
 }
 
 export default App;
-
-//   onClick={() => clickHandler()}
