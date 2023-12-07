@@ -8,4 +8,4 @@ This is a queue data structure app done a course called Databases and data struc
 
 ## Visuals
 
-![Picture of the app](public/game.png)
+![Picture of the app](public/queueapp.png)
