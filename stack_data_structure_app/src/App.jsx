@@ -42,13 +42,10 @@ function App() {
             <button className="blueButton" onClick={addBlueBoxHandler}>
               Add a blue ring!
             </button>
-            <button
-              className="yellowButton"
-              onClick={() => addYellowBoxHandler()}
-            >
+            <button className="yellowButton" onClick={addYellowBoxHandler}>
               Add a yellow ring!
             </button>
-            <button className="redButton" onClick={() => addRedBoxHandler()}>
+            <button className="redButton" onClick={addRedBoxHandler}>
               Add a red ring!
             </button>
             <button className="removeButton" onClick={removeBoxHandler}>
