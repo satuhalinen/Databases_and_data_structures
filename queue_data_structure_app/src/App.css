@@ -1,1 +1,145 @@
+.wagons {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
 
+.withBg {
+  width: 100vw;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.all {
+  width: 100vw;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  display: flex;
+}
+
+* {
+  font-family: "Anonymous Pro", monospace;
+}
+
+h1 {
+  padding: 50px;
+  flex-grow: 1;
+}
+
+.greenButton {
+  background-color: #bdd532;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  border: none;
+}
+
+.greenButton:hover {
+  background-color: #c6d280;
+  border: none;
+}
+
+.orangeButton {
+  background-color: #f87e2f;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  border: none;
+}
+
+.orangeButton:hover {
+  background-color: #f9af7d;
+  border: none;
+}
+
+.redButton {
+  background-color: #ee3e48;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  border: none;
+}
+
+.redButton:hover {
+  background-color: #eb8085;
+  border: none;
+}
+
+.removeButton {
+  background-color: black;
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  border: none;
+  color: white;
+}
+
+.removeButton:hover {
+  background-color: grey;
+  border: none;
+}
+
+.greenWagon {
+  background-image: url("greentrain.svg");
+  background-size: cover;
+  background-position: center;
+  width: 154px;
+  height: 122px;
+  margin: 2px;
+}
+
+.greenWagon:hover {
+  background-color: grey;
+}
+
+.orangeWagon {
+  background-image: url("orangetrain.svg");
+  background-size: cover;
+  background-position: center;
+  width: 154px;
+  height: 122px;
+  margin: 2px;
+}
+
+.orangeWagon:hover {
+  background-color: grey;
+}
+
+.redWagon {
+  background-image: url("redtrain.svg");
+  background-size: cover;
+  background-position: center;
+  border-color: black;
+  width: 154px;
+  height: 122px;
+  margin: 2px;
+}
+
+.redWagon:hover {
+  background-color: grey;
+}
+
+.buttons {
+  align-items: center;
+  background-color: #a36215;
+  display: flex;
+}
+
+@media only screen and (max-width: 840px) {
+  .buttons {
+    display: grid;
+    place-items: center;
+  }
+}
