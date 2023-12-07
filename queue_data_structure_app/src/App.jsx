@@ -36,22 +36,20 @@ function App() {
     <>
       <div className="all">
         <h1>Make a queue!</h1>
-        <div className="withBg">
-          <div className="wagons">{listItems}</div>
-          <div className="buttons">
-            <button className="greenButton" onClick={addGreenBoxHandler}>
-              Add a green wagon!
-            </button>
-            <button className="orangeButton" onClick={addOrangeBoxHandler}>
-              Add an orange wagon!
-            </button>
-            <button className="redButton" onClick={addRedBoxHandler}>
-              Add a red wagon!
-            </button>
-            <button className="removeButton" onClick={removeBoxHandler}>
-              Remove a wagon!
-            </button>
-          </div>
+        <div className="wagons">{listItems}</div>
+        <div className="buttons">
+          <button className="greenButton" onClick={addGreenBoxHandler}>
+            Add a green wagon!
+          </button>
+          <button className="orangeButton" onClick={addOrangeBoxHandler}>
+            Add an orange wagon!
+          </button>
+          <button className="redButton" onClick={addRedBoxHandler}>
+            Add a red wagon!
+          </button>
+          <button className="removeButton" onClick={removeBoxHandler}>
+            Remove a wagon!
+          </button>
         </div>
       </div>
     </>
