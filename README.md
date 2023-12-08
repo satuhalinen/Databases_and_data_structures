@@ -6,7 +6,7 @@ Check out for example my stack app
 
 - [Stack data structure app](https://github.com/satuhalinen/Databases_and_data_structures/tree/main/stack_data_structure_app)
 
-![Picture of Stack data structure app](game.png)
+![Picture of Stack data structure app](stackapp.png)
 
 and my queue app
 
